@@ -72,14 +72,14 @@
 		sprite.position = ccp(sw/2, sh*7/8);
 		[batch addChild:sprite];
 
-		sprite = [CCSprite spriteWithSpriteFrameName:@"moreGamesButton.png"];
-		sprite.position = ccp(sw/4, sh/2);
-		sprite.opacity = 0;
-		id a1 = [CCDelayTime actionWithDuration:0.2f];
-		id a2 = [CCFadeIn actionWithDuration:0.4f];
-		[sprite runAction:[CCSequence actions:a1,a2,nil]];
-		[batch addChild:sprite];
-		moreGamesButton = [sprite retain];
+//		sprite = [CCSprite spriteWithSpriteFrameName:@"moreGamesButton.png"];
+//		sprite.position = ccp(sw/4, sh/2);
+//		sprite.opacity = 0;
+//		id a1 = [CCDelayTime actionWithDuration:0.2f];
+//		id a2 = [CCFadeIn actionWithDuration:0.4f];
+//		[sprite runAction:[CCSequence actions:a1,a2,nil]];
+//		[batch addChild:sprite];
+//		moreGamesButton = [sprite retain];
 		
 		sprite = [CCSprite spriteWithSpriteFrameName:@"playButton.png"];
 		sprite.position = ccp(sw/2, sh/2);
@@ -88,42 +88,42 @@
 		[batch addChild:sprite];
 		playButton = [sprite retain];
 
-		sprite = [CCSprite spriteWithSpriteFrameName:@"gameSourcesButton.png"];
-		sprite.position = ccp(sw*3/4, sh/2);
-		sprite.opacity = 0;
-		a1 = [CCDelayTime actionWithDuration:0.2f];
-		a2 = [CCFadeIn actionWithDuration:0.4f];
-		[sprite runAction:[CCSequence actions:a1,a2,nil]];
-		[batch addChild:sprite];
-		gameSourcesButton = [sprite retain];
+//		sprite = [CCSprite spriteWithSpriteFrameName:@"gameSourcesButton.png"];
+//		sprite.position = ccp(sw*3/4, sh/2);
+//		sprite.opacity = 0;
+//		a1 = [CCDelayTime actionWithDuration:0.2f];
+//		a2 = [CCFadeIn actionWithDuration:0.4f];
+//		[sprite runAction:[CCSequence actions:a1,a2,nil]];
+//		[batch addChild:sprite];
+//		gameSourcesButton = [sprite retain];
 		
-		sprite = [CCSprite spriteWithSpriteFrameName:@"gpcLogo.png"];
-		sprite.position = ccp(sw*5/48, sh*11.7f/256);
-		sprite.opacity = 0;
-		a1 = [CCDelayTime actionWithDuration:0.6f];
-		a2 = [CCFadeIn actionWithDuration:0.4f];
-		[sprite runAction:[CCSequence actions:a1,a2,nil]];
-		[batch addChild:sprite];
+//		sprite = [CCSprite spriteWithSpriteFrameName:@"gpcLogo.png"];
+//		sprite.position = ccp(sw*5/48, sh*11.7f/256);
+//		sprite.opacity = 0;
+//		id a1 = [CCDelayTime actionWithDuration:0.6f];
+//		id a2 = [CCFadeIn actionWithDuration:0.4f];
+//		[sprite runAction:[CCSequence actions:a1,a2,nil]];
+//		[batch addChild:sprite];
 
-		sprite = [CCSprite spriteWithSpriteFrameName:@"cocos2dLogo.png"];
-		sprite.position = ccp(sw*43/48, sh*14.2f/256);
-		sprite.opacity = 0;
-		a1 = [CCDelayTime actionWithDuration:0.6f];
-		a2 = [CCFadeIn actionWithDuration:0.4f];
-		[sprite runAction:[CCSequence actions:a1,a2,nil]];
-		[batch addChild:sprite];
+//		sprite = [CCSprite spriteWithSpriteFrameName:@"cocos2dLogo.png"];
+//		sprite.position = ccp(sw*43/48, sh*14.2f/256);
+//		sprite.opacity = 0;
+//		a1 = [CCDelayTime actionWithDuration:0.6f];
+//		a2 = [CCFadeIn actionWithDuration:0.4f];
+//		[sprite runAction:[CCSequence actions:a1,a2,nil]];
+//		[batch addChild:sprite];
 
 		// labels
 		CCLabelTTF *label;
 
-		float fontSize = 12.0f;
-		if(IS_IPHONE) fontSize = 6.0f;
+		float fontSize = 15.0f;
+		if(IS_IPHONE) fontSize = 15.0f;
 		
-		label = [CCLabelTTF labelWithString:@"Created by @haqu for Game Prototype Challenge using Cocos2D." fontName:@"Verdana-Bold" fontSize:fontSize];
+		label = [CCLabelTTF labelWithString:@"Created by @TwoKingStudio" fontName:@"Verdana-Bold" fontSize:fontSize];
 		label.position = ccp(sw/2, sh*5/256);
 		label.opacity = 0;
-		a1 = [CCDelayTime actionWithDuration:0.6f];
-		a2 = [CCFadeIn actionWithDuration:0.4f];
+		id a1 = [CCDelayTime actionWithDuration:0.6f];
+		id a2 = [CCFadeIn actionWithDuration:0.4f];
 		[label runAction:[CCSequence actions:a1,a2,nil]];
 		[self addChild:label];
 
